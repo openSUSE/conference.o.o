@@ -323,3 +323,14 @@
         }
 
     }
+
+#SpeakerCarousel .thumbnail {
+    /** width: 260px;
+    height: 180px; **/
+    overflow: hidden; /* contain images within thumbnail boundaries */
+    border: 0; /* removes Bootstrap's default border */
+    box-shadow: 0 12px 12px -10px #c4c4c4;
+    -webkit-box-shadow: 0 17px 22px -20px #c4c4c4;
+    -moz-box-shadow: 0 12px 12px -10px #c4c4c4;
+}
+#SpeakerCarousel .thumbnail img { width:100%; height:auto; position: static; } /* to keep proportions */
