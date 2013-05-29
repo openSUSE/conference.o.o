@@ -1,5 +1,6 @@
 .redcar/
 output/*
+site/
 .DS_Store
 .directory
 tmp/*
