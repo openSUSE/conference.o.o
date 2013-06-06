@@ -33,6 +33,12 @@ piwikTracker.enableLinkTracking();
 
     L.marker([40.62747452211302, 22.9642814201005]).addTo(map)
       .bindPopup("<b>openSUSE Conference 2013</b><br>Venue").openPopup();
+
+$('a#maptab[data-toggle="tab"]').on('shown', function (e) {
+  console.log('Map resized');
+  map.invalidateSize(false);
+});
+
   </script>
 
 <script>
@@ -48,10 +54,6 @@ piwikTracker.enableLinkTracking();
 $(function() {
     var hash = window.location.hash;
     hash && $('ul.nav a[href="' + hash + '"]').tab('show');
-
-    $("body").on('shown','#maptab', function() {
-      map.invalidateSize(false);
-    });
 });
 </script>
 
