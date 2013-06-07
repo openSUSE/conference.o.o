@@ -85,11 +85,14 @@ function startUpLeafet(tabletopData) {
 
 var Hotel = new oSCIcon({iconUrl: '/images/markers/hotel.png'}),
     Venue = new oSCIcon({iconUrl: '/images/markers/venue.png'}),
-    Sight = new oSCIcon({iconUrl: '/images/markers/venue.png'});
+    Sight = new oSCIcon({iconUrl: '/images/markers/sight.png'});
     Airport = new oSCIcon({iconUrl: '/images/markers/airport.png'});
     Bus = new oSCIcon({iconUrl: '/images/markers/bus.png'});
     Taxi = new oSCIcon({iconUrl: '/images/markers/taxi.png'});
     Train = new oSCIcon({iconUrl: '/images/markers/train.png'});
+    Shopping = new oSCIcon({iconUrl: '/images/markers/shopping.png'});
+    Bar = new oSCIcon({iconUrl: '/images/markers/bar.png'});
+    Food = new oSCIcon({iconUrl: '/images/markers/food.png'});
 
   // Tabletop creates arrays out of our data
   // We'll loop through them and create markers for each
@@ -110,7 +113,7 @@ var Hotel = new oSCIcon({iconUrl: '/images/markers/hotel.png'}),
     // Add to our marker
     marker_location = new L.LatLng(dataLat, dataLong);
     // Create the marker
-      layer = new L.Marker(marker_location, {icon: dataType});
+      layer = new L.Marker(marker_location, {icon: eval(dataType)});
     
       // Create the popup
       // Change 'Address', 'City', etc.
