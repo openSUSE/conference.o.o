@@ -16,6 +16,7 @@
     }
 
     #oSC13map { height: 500px; }
+    .leaflet-shadow-pane {display: none;}
 
     /* CUSTOMIZE THE NAVBAR
     -------------------------------------------------- */

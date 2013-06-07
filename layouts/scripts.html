@@ -19,6 +19,37 @@ piwikTracker.enableLinkTracking();
 <!-- Prettify -->
 <script src="/js/prettify.js"></script>
 
+<!-- Tabletop -->
+<script src="/js/tabletop.js"></script>
+
+<script>
+  !function ($) {
+    $(function(){
+      window.prettyPrint && prettyPrint()   
+    })
+  }(window.jQuery)
+</script>
+
+<script>
+// Here's the Tabletop feed
+// First we'll initialize Tabletop with our spreadsheet
+var jqueryNoConflict = jQuery;
+jqueryNoConflict(document).ready(function(){
+  initializeTabletopObject('0ArMbkBL7n3y4dFh4QU1FYVkwU1cwWEhFSmoxM0ozZFE');
+});
+
+// Pull data from Google spreadsheet
+// And push to our startUpLeaflet function
+function initializeTabletopObject(dataSpreadsheet){
+  Tabletop.init({
+      key: dataSpreadsheet,
+      callback: startUpLeafet,
+      simpleSheet: true,
+      debug: false
+    });
+}
+</script>
+
 <!-- Leaflet (OSM slippy map) -->
 <script src="/js/leaflet.js"></script>
 
@@ -27,11 +58,8 @@ piwikTracker.enableLinkTracking();
 
     L.tileLayer('http://{s}.tile.osm.org/{z}/{x}/{y}.png', {
       maxZoom: 18,
-      attribution: 'Map data &copy; <a href="http://openstreetmap.org">OpenStreetMap</a> contributors, <a href="http://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, Imagery © <a href="http://cloudmade.com">CloudMade</a>'
+      attribution: 'Map data & Imagery &copy; <a href="http://openstreetmap.org">OpenStreetMap</a> contributors, <a href="http://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>'
     }).addTo(map);
-
-    L.marker([40.62747452211302, 22.9642814201005]).addTo(map)
-      .bindPopup("<b>openSUSE Conference 2013</b><br>Venue")
 
 $('a#maptab[data-toggle="tab"]').on('shown', function (e) {
   console.log('Map resized');
@@ -41,11 +69,65 @@ $('a#maptab[data-toggle="tab"]').on('shown', function (e) {
   </script>
 
 <script>
-  !function ($) {
-    $(function(){
-      window.prettyPrint && prettyPrint()   
-    })
-  }(window.jQuery)
+// This function gets our data from our spreadsheet
+// Then gets it ready for Leaflet.
+// It creates the marker, sets location
+// And plots on it on our map
+function startUpLeafet(tabletopData) {
+  //Set up the different markers
+  var oSCIcon = L.Icon.extend({
+    options: {
+        iconSize:     [64, 64],
+        iconAnchor:   [35, 68],
+        popupAnchor:  [-3, -76]
+    }
+  });
+
+var Hotel = new oSCIcon({iconUrl: '/images/markers/hotel.png'}),
+    Venue = new oSCIcon({iconUrl: '/images/markers/venue.png'}),
+    Sight = new oSCIcon({iconUrl: '/images/markers/venue.png'});
+    Airport = new oSCIcon({iconUrl: '/images/markers/airport.png'});
+    Bus = new oSCIcon({iconUrl: '/images/markers/bus.png'});
+    Taxi = new oSCIcon({iconUrl: '/images/markers/taxi.png'});
+    Train = new oSCIcon({iconUrl: '/images/markers/train.png'});
+
+  // Tabletop creates arrays out of our data
+  // We'll loop through them and create markers for each
+  for (var num = 0; num < tabletopData.length; num ++) {
+    // Our table columns
+    // Change 'brewery', 'address', etc.
+    // To match table column names in your table
+    var dataOne = tabletopData[num].name;
+    var dataTwo = tabletopData[num].address;
+    var dataThree= tabletopData[num].website;
+
+    // Pull in our lat, long information
+    var dataLat = tabletopData[num].latitude;
+    var dataLong = tabletopData[num].longitude;
+
+    var dataType = tabletopData[num].type;
+
+    // Add to our marker
+    marker_location = new L.LatLng(dataLat, dataLong);
+    // Create the marker
+      layer = new L.Marker(marker_location, {icon: dataType});
+    
+      // Create the popup
+      // Change 'Address', 'City', etc.
+    // To match table column names in your table
+      var popup = "<div class=popup_box" + "id=" + num + ">";
+      popup += "<div class='popup_box_header'><strong>" + dataOne + "</strong></div>";
+      popup += "<hr />";
+      popup += "<strong>Address:</strong> " + dataTwo + "<br />";
+      popup += "<strong>Website:</strong> " + dataThree + "<br />";
+      popup += "</div>";
+      // Add to our marker
+    layer.bindPopup(popup);
+  
+    // Add marker to our to map
+    map.addLayer(layer);
+  }
+};
 </script>
 
 <!-- Tab links -->
@@ -56,6 +138,7 @@ $(function() {
 });
 </script>
 
+<!-- Carousels -->
 <script>
 $('#SpeakerCarousel').carousel({
     interval: 5000
