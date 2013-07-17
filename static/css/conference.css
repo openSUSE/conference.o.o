@@ -327,6 +327,12 @@
 
     }
 
+#SpeakerCarousel {
+  /* Looks nasty, but is a fast way to prevent the page to shrinking and grow
+   * all the time */
+    height: 600px;
+}
+
 #SpeakerCarousel .thumbnail {
     /** width: 260px;
     height: 180px; **/
