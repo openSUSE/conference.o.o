@@ -159,3 +159,12 @@ $('#SpeakerCarousel').carousel({
     interval: 5000
 })
 </script>
+
+<!-- Crappy javascript to reload images in the live streaming -->
+<script>
+  setInterval(function() {
+    var suffix = "?" + escape(new Date());
+    $('#stream1').attr('src', "images/stream/stream1.jpg" + suffix);
+    $('#stream2').attr('src', "images/stream/stream2.jpg" + suffix);
+  }, 3000);
+</script>
