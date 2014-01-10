@@ -4,7 +4,7 @@ Source of [conference.opensuse.org](http://conference.opensuse.org)
 This is page is using 
 
 * http://twitter.github.com/bootstrap/
-* http://nanoc.stoneship.org/
+* http://jekyllrb.com 
 
 and gets deployed automatically every 15 minutes.
 

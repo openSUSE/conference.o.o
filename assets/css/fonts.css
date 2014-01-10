@@ -1,0 +1,5 @@
+@font-face {
+  font-family: 'chunk';
+  src: url("/assets/fonts/Chunkfive-webfont.eot?#iefix") format("embedded-opentype"), url("/assets/fonts/Chunkfive-webfont.woff") format("woff"), url("/assets/fonts/Chunkfive-webfont.ttf") format("truetype"), url("/assets/fonts/Chunkfive-webfont.svg#droid_serifregular") format("svg");
+  font-weight: normal;
+  font-style: normal; }

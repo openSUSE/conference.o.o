@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="robots" content="all">
+    <title>openSUSE Conference. 24.-28. April 2014. Dubrovnik, Croatia</title>
+    <meta name="description" content="From 24.-28. April, 2014 the openSUSE Conference 2014 will bring together a wide variety of Open Source contributors to collaborate on one of the major Linux distribution projects.">
+    <meta name="author" content="Henne Vogelsang (http://hennevogel.de)">
+    <meta name="keywords" content="conference, linux, distribution, foss, open source, free software, software, meeting, summit, opensuse">
+
+    <!-- Open Graph Metadata -->
+    <meta property="og:site_name" content="oSC13">
+    <meta property="og:title" content="openSUSE Conference 2013">
+    <meta property="og:description" content="From 18-22 July, 2013 oSC13 will bring together a wide variety of Open Source contributors to collaborate on one of the major Linux distribution projects.">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="http://conference.opensuse.org/images/promo/badge.jpg">
+    <meta property="og:url" content="http://conference.opensuse.org">
+
+    <link rel="icon" type="image/png" href="http://static.opensuse.org/themes/bento/images/favicon.png" />
+    <link rel="alternate" type="application/rss+xml" title="oSC13 News" href="https://news.opensuse.org/category/project/events/osc/feed/" />
+
+    <!-- Bootstrap core CSS -->
+    <link href="assets/css/bootstrap.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="assets/css/main.css" rel="stylesheet">
+    <link href="assets/css/fonts.css" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/font-awesome.min.css">
+    <link href="assets/css/leaflet.css" type="text/css" rel="stylesheet" />
+  <!--[if lte IE 8]>
+<link href="/css/leaflet.ie.css" type="text/css" rel="stylesheet" />
+<![endif]-->
+  <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+  <!--[if lt IE 9]>
+<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+    <link href="assets/css/prettify.css" type="text/css" rel="stylesheet" />
+    <script src="assets/js/jquery.min.js"></script>
+	<script src="assets/js/Chart.js"></script>
+	<script src="assets/js/modernizr.custom.js"></script>
+	
+
+	
+    <link href='http://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Raleway:400,300,700' rel='stylesheet' type='text/css'>
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="assets/js/html5shiv.js"></script>
+      <script src="assets/js/respond.min.js"></script>
+    <![endif]-->
+  </head>
+
+  <body data-spy="scroll" data-offset="0" data-target="#theMenu">
+		
+	<!-- Menu -->
+	<nav class="menu" id="theMenu">
+		<div class="menu-wrap">
+			<h1 class="logo"><a href="index.html#home">oSC14</a></h1>
+			<a href="#about" class="smoothScroll">About</a>
+			<a href="#program" class="smoothScroll">Program</a>
+			<a href="#location" class="smoothScroll">Location</a>
+			<a href="#tickets" class="smoothScroll">Tickets</a>
+			<a href="#sponsors" class="smoothScroll">Sponsors</a>
+			<a href="#"><i class="fa fa-facebook"></i></a>
+			<a href="#"><i class="fa fa-twitter"></i></a>
+			<a href="#"><i class="fa fa-google-plus-square"></i></a>
+			<a href="#"><i class="fa fa-rss"></i></a>
+		</div>
+		
+		<!-- Menu button -->
+		<div id="menuToggle"><i class="fa fa-th"></i></div>
+	</nav>
+
+	{{ content }}
+	
+
+	<div id="c">
+		<div class="container">
+			<p>Based on <a href="http://www.blacktie.co">BLACKTIE.CO</a></p>
+		</div>
+	</div>
+	
+	
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+	<script src="assets/js/classie.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="assets/js/smoothscroll.js"></script>
+    <script src="assets/js/main.js"></script>
+    <!-- Piwik -->
+    <script type="text/javascript">
+    var pkBaseURL = (("https:" == document.location.protocol) ? "https://beans.opensuse.org/piwik/" : "http://beans.opensuse.org/piwik/");
+    document.write(unescape("%3Cscript src='" + pkBaseURL + "piwik.js' type='text/javascript'%3E%3C/script%3E"));
+    </script><script type="text/javascript">
+    try {
+      var piwikTracker = Piwik.getTracker(pkBaseURL + "piwik.php", 18);
+      piwikTracker.trackPageView();
+      piwikTracker.enableLinkTracking();
+    } catch( err ) {}
+    </script><noscript><p><img src="http://beans.opensuse.org/piwik/piwik.php?idsite=18" style="border:0" alt="" /></p></noscript>
+
+    <!-- Tabletop -->
+    <script src="assets/js/tabletop.js"></script>
+    
+    <script>
+      !function ($) {
+        $(function(){
+          window.prettyPrint && prettyPrint()
+        })
+      }(window.jQuery)
+    </script>
+
+    <script>
+    // Here's the Tabletop feed
+    // First we'll initialize Tabletop with our spreadsheet
+    var jqueryNoConflict = jQuery;
+    jqueryNoConflict(document).ready(function(){
+      initializeTabletopObject('0ArMbkBL7n3y4dFh4QU1FYVkwU1cwWEhFSmoxM0ozZFE');
+    });
+    
+    // Pull data from Google spreadsheet
+    // And push to our startUpLeaflet function
+    function initializeTabletopObject(dataSpreadsheet){
+      Tabletop.init({
+          key: dataSpreadsheet,
+          callback: startUpLeafet,
+          simpleSheet: true,
+          debug: false
+        });
+    }
+    </script>
+    
+    <!-- Leaflet (OSM slippy map) -->
+    <script src="/assets/js/leaflet.js"></script>
+    
+    <script>
+        var map = L.map('oSC14map').setView([40.632714,22.952499], 14);
+    
+        L.tileLayer('http://{s}.tile.osm.org/{z}/{x}/{y}.png', {
+          maxZoom: 18,
+      attribution: 'Map data & Imagery &copy; <a href="http://openstreetmap.org">OpenStreetMap</a> contributors, <a href="http://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, Markers &copy; <a href="http://www.webiconset.com/map-    icons/">WebIconSet</a>.'
+        }).addTo(map);
+    
+        var popup = L.popup();
+    
+          function onMapClick(e) {
+            popup
+              .setLatLng(e.latlng)
+              .setContent(e.latlng.toString())
+              .openOn(map);
+          }
+    
+          map.on('click', onMapClick);
+    </script>
+    
+    <script>
+    // This function gets our data from our spreadsheet
+    // Then gets it ready for Leaflet.
+    // It creates the marker, sets location
+    // And plots on it on our map
+    function startUpLeafet(tabletopData) {
+      //Set up the different markers
+      var oSCIcon = L.Icon.extend({
+        options: {
+            iconSize: [64, 64],
+            iconAnchor: [35, 68],
+            popupAnchor: [-3, -76]
+        }
+      });
+    
+    var Hotel = new oSCIcon({iconUrl: '/assets/img/markers/hotel.png'}),
+        Venue = new oSCIcon({iconUrl: '/assets/img/markers/venue.png'}),
+        Sight = new oSCIcon({iconUrl: '/assets/img/markers/sight.png'});
+        Airport = new oSCIcon({iconUrl: '/assets/img/markers/airport.png'});
+        Bus = new oSCIcon({iconUrl: '/assets/img/markers/bus.png'});
+        Taxi = new oSCIcon({iconUrl: '/assets/img/markers/taxi.png'});
+        Train = new oSCIcon({iconUrl: '/assets/img/markers/train.png'});
+        Shopping = new oSCIcon({iconUrl: '/assets/img/markers/shopping.png'});
+        Bar = new oSCIcon({iconUrl: '/assets/img/markers/bar.png'});
+        Food = new oSCIcon({iconUrl: '/assets/img/markers/food.png'});
+    
+      // Tabletop creates arrays out of our data
+      // We'll loop through them and create markers for each
+      for (var num = 0; num < tabletopData.length; num ++) {
+        // Our table columns
+        // Change 'brewery', 'address', etc.
+        // To match table column names in your table
+        var dataOne = tabletopData[num].name;
+        var dataTwo = tabletopData[num].address;
+        var dataThree= tabletopData[num].website;
+    
+        // Pull in our lat, long information
+        var dataLat = tabletopData[num].latitude;
+        var dataLong = tabletopData[num].longitude;
+    
+        var dataType = tabletopData[num].type;
+    
+        // Add to our marker
+        marker_location = new L.LatLng(dataLat, dataLong);
+        // Create the marker
+          layer = new L.Marker(marker_location, {icon: eval(dataType)});
+        
+          // Create the popup
+          // Change 'Address', 'City', etc.
+        // To match table column names in your table
+          var popup = "<div class=popup_box" + "id=" + num + ">";
+          popup += "<div class='popup_box_header'><strong>" + dataOne + "</strong></div>";
+          popup += "<hr />";
+          popup += "<strong>Address:</strong> " + dataTwo + "<br />";
+          popup += "<strong>Website:</strong> " + dataThree + "<br />";
+          popup += "</div>";
+          // Add to our marker
+        layer.bindPopup(popup);
+      
+        // Add marker to our to map
+        map.addLayer(layer);
+      }
+    };
+    </script>
+
+
+</body>
+</html>

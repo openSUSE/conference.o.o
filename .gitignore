@@ -1,9 +1,1 @@
-.redcar/
-output/*
-site/
-.DS_Store
-.directory
-tmp/*
-crash.log
-.idea/
-config.yaml
+_site
