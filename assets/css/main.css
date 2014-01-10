@@ -103,24 +103,22 @@ a:after {
 	font-family: "chunk";
 	margin-top: 100px;
 	color: #669900;
-	font-size: 140px;
-	font-weight: 700;
-	letter-spacing: 3px;
+	text-shadow: 0.01em 0.01em 0 #4A4F6A, 0.02em 0.02em 0 #4A4F6A, 0.03em 0.03em 0 #4A4F6A, 0.04em 0.04em 0 #4A4F6A, 0.05em 0.05em 0 #4A4F6A, 0.06em 0.06em 0 #4A4F6A, 0.07em 0.07em 0 #4A4F6A, 0.08em 0.08em 0 #4A4F6A, 0.09em 0.09em 0 #4A4F6A, 0.1em 0.1em 0 #4A4F6A;
 }
 
 #headerwrap h2 {
 	font-family: "chunk";
+	margin-top: 20px;
 	color: #3399CC;
-	font-size: 50px;
 	font-weight: 100;
-	letter-spacing: 2px;
+	text-shadow: 0.01em 0.01em 0 #4A4F6A, 0.02em 0.02em 0 #4A4F6A, 0.03em 0.03em 0 #4A4F6A, 0.04em 0.04em 0 #4A4F6A, 0.05em 0.05em 0 #4A4F6A, 0.06em 0.06em 0 #4A4F6A, 0.07em 0.07em 0 #4A4F6A, 0.08em 0.08em 0 #4A4F6A, 0.09em 0.09em 0 #4A4F6A, 0.1em 0.1em 0 #4A4F6A;
 }
 
 /* Portfolio Wrap */
 #portfoliowrap {
 	background: url(../img/portfolio-bg.jpg) no-repeat center top;
 	margin-top: 0px;
-	padding-top:70px;
+	padding-top:40px;
 	text-align:center;
 	background-attachment: relative;
 	background-position: center center;
@@ -142,11 +140,6 @@ a:after {
 #portfoliowrap h3 {
 	color: #ffffff;
 }
-
-.port-space {
-	padding-bottom: 20px;
-}
-
 
 /* White Wrap */
 

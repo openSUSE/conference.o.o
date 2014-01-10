@@ -21,7 +21,7 @@
     <link rel="alternate" type="application/rss+xml" title="oSC13 News" href="https://news.opensuse.org/category/project/events/osc/feed/" />
 
     <!-- Bootstrap core CSS -->
-    <link href="assets/css/bootstrap.css" rel="stylesheet">
+    <link href="assets/css/bootstrap.min.css" rel="stylesheet">
 
     <!-- Custom styles for this template -->
     <link href="assets/css/main.css" rel="stylesheet">
@@ -73,12 +73,23 @@
 		<div id="menuToggle"><i class="fa fa-th"></i></div>
 	</nav>
 
+
 	{{ content }}
 	
 
 	<div id="c">
 		<div class="container">
-			<p>Based on <a href="http://www.blacktie.co">BLACKTIE.CO</a></p>
+            <div class="row">
+              <div class="col-md-4">
+              </div>
+              <div class="col-md-4">
+                <p class="text-center">
+                © 2014 openSUSE <br /><a rel="license" href="http://creativecommons.org/licenses/by/4.0/"><img alt="Creative Commons License" style="border-width:0" src="http://i.creativecommons.org/l/by/4.0/80x15.png" /></a>
+              </p>
+              </div>
+              <div class="col-md-4">
+			<p>Based on <a href="http://www.blacktie.co/2013/10/onassis-agency-one-page-theme/">Onassis</a> a theme by <a href="http://www.blacktie.co">BLACKTIE.CO</a></p>
+              </div>
 		</div>
 	</div>
 	
@@ -103,6 +114,12 @@
     } catch( err ) {}
     </script><noscript><p><img src="http://beans.opensuse.org/piwik/piwik.php?idsite=18" style="border:0" alt="" /></p></noscript>
 
+    <!-- FixText for the main title -->
+    <script src="assets/js/jquery.fittext.js"></script>
+    <script>
+      jQuery("#main-title").fitText(0.5);
+    </script>
+
     <!-- Tabletop -->
     <script src="assets/js/tabletop.js"></script>
     
@@ -119,7 +136,7 @@
     // First we'll initialize Tabletop with our spreadsheet
     var jqueryNoConflict = jQuery;
     jqueryNoConflict(document).ready(function(){
-      initializeTabletopObject('0ArMbkBL7n3y4dFh4QU1FYVkwU1cwWEhFSmoxM0ozZFE');
+      /* initializeTabletopObject('0ArMbkBL7n3y4dFh4QU1FYVkwU1cwWEhFSmoxM0ozZFE'); */
     });
     
     // Pull data from Google spreadsheet
