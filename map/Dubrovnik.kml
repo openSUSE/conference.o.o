@@ -1,0 +1,588 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://earth.google.com/kml/2.2">
+<Document>
+  <name>Dubrovnik</name>
+  <description><![CDATA[]]></description>
+  <Style id="style23">
+    <IconStyle>
+      <Icon>
+        <href>university.png</href>
+      </Icon>
+    </IconStyle>
+  </Style>
+  <Style id="style18">
+    <IconStyle>
+      <Icon>
+        <href>hotel.png</href>
+      </Icon>
+    </IconStyle>
+  </Style>
+  <Style id="style21">
+    <IconStyle>
+      <Icon>
+        <href>hotel.png</href>
+      </Icon>
+    </IconStyle>
+  </Style>
+  <Style id="style7">
+    <IconStyle>
+      <Icon>
+        <href>hotel.png</href>
+      </Icon>
+    </IconStyle>
+  </Style>
+  <Style id="style10">
+    <IconStyle>
+      <Icon>
+        <href>restaurant.png</href>
+      </Icon>
+    </IconStyle>
+  </Style>
+  <Style id="style24">
+    <IconStyle>
+      <Icon>
+        <href>restaurant.png</href>
+      </Icon>
+    </IconStyle>
+  </Style>
+  <Style id="style27">
+    <IconStyle>
+      <Icon>
+        <href>restaurant.png</href>
+      </Icon>
+    </IconStyle>
+  </Style>
+  <Style id="style30">
+    <IconStyle>
+      <Icon>
+        <href>restaurant.png</href>
+      </Icon>
+    </IconStyle>
+  </Style>
+  <Style id="style16">
+    <IconStyle>
+      <Icon>
+        <href>restaurant.png</href>
+      </Icon>
+    </IconStyle>
+  </Style>
+  <Style id="style5">
+    <IconStyle>
+      <Icon>
+        <href>icecream.png</href>
+      </Icon>
+    </IconStyle>
+  </Style>
+  <Style id="style19">
+    <IconStyle>
+      <Icon>
+        <href>bakery.png</href>
+      </Icon>
+    </IconStyle>
+  </Style>
+  <Style id="style20">
+    <IconStyle>
+      <Icon>
+        <href>shopping.png</href>
+      </Icon>
+    </IconStyle>
+  </Style>
+  <Style id="style34">
+    <IconStyle>
+      <Icon>
+        <href>shopping.png</href>
+      </Icon>
+    </IconStyle>
+  </Style>
+  <Style id="style28">
+    <IconStyle>
+      <Icon>
+        <href>shopping.png</href>
+      </Icon>
+    </IconStyle>
+  </Style>
+  <Style id="style13">
+    <IconStyle>
+      <Icon>
+        <href>hospital.png</href>
+      </Icon>
+    </IconStyle>
+  </Style>
+  <Style id="style26">
+    <IconStyle>
+      <Icon>
+        <href>poi.png</href>
+      </Icon>
+    </IconStyle>
+  </Style>
+  <Style id="style32">
+    <IconStyle>
+      <Icon>
+        <href>poi.png</href>
+      </Icon>
+    </IconStyle>
+  </Style>
+  <Style id="style33">
+    <IconStyle>
+      <Icon>
+        <href>poi.png</href>
+      </Icon>
+    </IconStyle>
+  </Style>
+  <Style id="style3">
+    <IconStyle>
+      <Icon>
+        <href>poi.png</href>
+      </Icon>
+    </IconStyle>
+  </Style>
+  <Style id="style35">
+    <IconStyle>
+      <Icon>
+        <href>poi.png</href>
+      </Icon>
+    </IconStyle>
+  </Style>
+  <Style id="style12">
+    <IconStyle>
+      <Icon>
+        <href>poi.png</href>
+      </Icon>
+    </IconStyle>
+  </Style>
+  <Style id="style8">
+    <IconStyle>
+      <Icon>
+        <href>poi.png</href>
+      </Icon>
+    </IconStyle>
+  </Style>
+  <Style id="style6">
+    <IconStyle>
+      <Icon>
+        <href>poi.png</href>
+      </Icon>
+    </IconStyle>
+  </Style>
+  <Style id="style1">
+    <IconStyle>
+      <Icon>
+        <href>poi.png</href>
+      </Icon>
+    </IconStyle>
+  </Style>
+  <Style id="style15">
+    <IconStyle>
+      <Icon>
+        <href>poi.png</href>
+      </Icon>
+    </IconStyle>
+  </Style>
+  <Style id="style29">
+    <IconStyle>
+      <Icon>
+        <href>poi.png</href>
+      </Icon>
+    </IconStyle>
+  </Style>
+  <Style id="style9">
+    <IconStyle>
+      <Icon>
+        <href>poi.png</href>
+      </Icon>
+    </IconStyle>
+  </Style>
+  <Style id="style17">
+    <IconStyle>
+      <Icon>
+        <href>poi.png</href>
+      </Icon>
+    </IconStyle>
+  </Style>
+  <Style id="style2">
+    <IconStyle>
+      <Icon>
+        <href>poi.png</href>
+      </Icon>
+    </IconStyle>
+  </Style>
+  <Style id="style31">
+    <IconStyle>
+      <Icon>
+        <href>poi.png</href>
+      </Icon>
+    </IconStyle>
+  </Style>
+  <Style id="style22">
+    <IconStyle>
+      <Icon>
+        <href>poi.png</href>
+      </Icon>
+    </IconStyle>
+  </Style>
+  <Style id="style25">
+    <IconStyle>
+      <Icon>
+        <href>poi.png</href>
+      </Icon>
+    </IconStyle>
+  </Style>
+  <Style id="style4">
+    <IconStyle>
+      <Icon>
+        <href>poi.png</href>
+      </Icon>
+    </IconStyle>
+  </Style>
+  <Style id="style14">
+    <IconStyle>
+      <Icon>
+        <href>beach.png</href>
+      </Icon>
+    </IconStyle>
+  </Style>
+  <Style id="style11">
+    <IconStyle>
+      <Icon>
+        <href>beach.png</href>
+      </Icon>
+    </IconStyle>
+  </Style>
+  <Placemark>
+    <name></name>
+    <description><![CDATA[University of Dubrovnik<br>
+Ulica branitelja Dubrovnika<br>
+<a href='http://unidu.hr'>unidu.hr</a>]]></description>
+    <styleUrl>#style23</styleUrl>
+    <Point>
+      <coordinates>18.099756,42.644485,0.000000</coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name></name>
+    <description><![CDATA[Rixos Libertas hotel Dubrovnik<br>Liechtensteinov put 3]]></description>
+    <styleUrl>#style18</styleUrl>
+    <Point>
+      <coordinates>18.090866,42.645309,0.000000</coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name></name>
+    <description><![CDATA[Hotel Vis<br>Masarykov put 4]]></description>
+    <styleUrl>#style21</styleUrl>
+    <Point>
+      <coordinates>18.067724,42.653160,0.000000</coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name></name>
+    <description><![CDATA[Hotel Adriatic<br>Masarykov put 9]]></description>
+    <styleUrl>#style7</styleUrl>
+    <Point>
+      <coordinates>18.069387,42.653179,0.000000</coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name></name>
+    <description><![CDATA[Nishta vegetarian restaurant with vegan, raw and gluten-free options<br>Prijeko bb<br>
++385 98 186 7440<br>
+<a href='http://nishtarestaurant.com'>nishtarestaurant.com</a>]]></description>
+    <styleUrl>#style10</styleUrl>
+    <Point>
+      <coordinates>18.108601,42.641800,0.000000</coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name></name>
+    <description><![CDATA[Sesame Taverna<br>Don Frana Bulića 4<br>
++385 20 412 910 <br> <a href='http://sesame.hr'>sesame.hr</a> ]]></description>
+    <styleUrl>#style24</styleUrl>
+    <Point>
+      <coordinates>18.102928,42.642696,0.000000</coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name></name>
+    <description><![CDATA[Mimoza restaurant<br>Branitelja Dubrovnika 9]]></description>
+    <styleUrl>#style27</styleUrl>
+    <Point>
+      <coordinates>18.104689,42.642391,0.000000</coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name></name>
+    <description><![CDATA[East-West beach club<br>Frana Supila bb<br>
++385 20 412 220
+<a href='http://ew-dubrovnik.com'>ew-dubrovnik.com</a>]]></description>
+    <styleUrl>#style30</styleUrl>
+    <Point>
+      <coordinates>18.115961,42.641529,0.000000</coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name></name>
+    <description><![CDATA[Taj Mahal Bosnian Restaurant<br>Nikole Gučetića 2]]></description>
+    <styleUrl>#style16</styleUrl>
+    <Point>
+      <coordinates>18.108835,42.640545,0.000000</coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name></name>
+    <description><![CDATA[Gossip fast food, ice cream<br>Stradun]]></description>
+    <styleUrl>#style5</styleUrl>
+    <Point>
+      <coordinates>18.109987,42.641571,0.000000</coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name></name>
+    <description><![CDATA[Sugar and Spice bakery<br>Svetog Josipa 5]]></description>
+    <styleUrl>#style19</styleUrl>
+    <Point>
+      <coordinates>18.108213,42.640644,0.000000</coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name></name>
+    <description><![CDATA[Tommy shopping centre (Bio&Bio health food store with gluten free, vegan, and raw products)<br>Vukovarska ulica 36]]></description>
+    <styleUrl>#style20</styleUrl>
+    <Point>
+      <coordinates>18.090258,42.652409,0.000000</coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name></name>
+    <description><![CDATA[DM drugstore (cosmetics, sunscreen, gluten-free food)<br>Vukovarska ulica 13]]></description>
+    <styleUrl>#style34</styleUrl>
+    <Point>
+      <coordinates>18.091606,42.650944,0.000000</coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name></name>
+    <description><![CDATA[DM drugstore (cosmetics, sunscreen, gluten-free food)<br>Brsalje 17]]></description>
+    <styleUrl>#style28</styleUrl>
+    <Point>
+      <coordinates>18.105404,42.642231,0.000000</coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name></name>
+    <description><![CDATA[Hospital, emergency room<br>Dr. Roka Mišetića 2]]></description>
+    <styleUrl>#style13</styleUrl>
+    <Point>
+      <coordinates>18.075825,42.648678,0.000000</coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name></name>
+    <description><![CDATA[Sponza Palace]]></description>
+    <styleUrl>#style26</styleUrl>
+    <Point>
+      <coordinates>18.110626,42.640968,0.000000</coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name></name>
+    <description><![CDATA[Rector's Palace]]></description>
+    <styleUrl>#style32</styleUrl>
+    <Point>
+      <coordinates>18.110588,42.640324,0.000000</coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name></name>
+    <description><![CDATA[Placa ulica]]></description>
+    <styleUrl>#style33</styleUrl>
+    <Point>
+      <coordinates>18.108925,42.641312,0.000000</coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name></name>
+    <description><![CDATA[Lovrjenac]]></description>
+    <styleUrl>#style3</styleUrl>
+    <Point>
+      <coordinates>18.104160,42.640591,0.000000</coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name></name>
+    <description><![CDATA[Tvrđava Srđ]]></description>
+    <styleUrl>#style35</styleUrl>
+    <Point>
+      <coordinates>18.110577,42.649963,0.000000</coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name></name>
+    <description><![CDATA[Orlando's Column]]></description>
+    <styleUrl>#style12</styleUrl>
+    <Point>
+      <coordinates>18.110285,42.640938,0.000000</coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name></name>
+    <description><![CDATA[Knežev dvor]]></description>
+    <styleUrl>#style8</styleUrl>
+    <Point>
+      <coordinates>18.110783,42.640545,0.000000</coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name></name>
+    <description><![CDATA[Sveti Ivan]]></description>
+    <styleUrl>#style6</styleUrl>
+    <Point>
+      <coordinates>18.112436,42.640049,0.000000</coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name></name>
+    <description><![CDATA[Minceta]]></description>
+    <styleUrl>#style1</styleUrl>
+    <Point>
+      <coordinates>18.108509,42.643055,0.000000</coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name></name>
+    <description><![CDATA[Revelin]]></description>
+    <styleUrl>#style15</styleUrl>
+    <Point>
+      <coordinates>18.112591,42.642235,0.000000</coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name></name>
+    <description><![CDATA[Tvrđava Bokar]]></description>
+    <styleUrl>#style29</styleUrl>
+    <Point>
+      <coordinates>18.106133,42.640919,0.000000</coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name></name>
+    <description><![CDATA[Cathedral]]></description>
+    <styleUrl>#style9</styleUrl>
+    <Point>
+      <coordinates>18.110374,42.639919,0.000000</coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name></name>
+    <description><![CDATA[St. Blaise church]]></description>
+    <styleUrl>#style17</styleUrl>
+    <Point>
+      <coordinates>18.110291,42.640793,0.000000</coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name></name>
+    <description><![CDATA[Jesuit Church of St. Ignatius of Loyola]]></description>
+    <styleUrl>#style2</styleUrl>
+    <Point>
+      <coordinates>18.109400,42.639702,0.000000</coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name></name>
+    <description><![CDATA[Dominican Monastery]]></description>
+    <styleUrl>#style31</styleUrl>
+    <Point>
+      <coordinates>18.111649,42.641693,0.000000</coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name></name>
+    <description><![CDATA[Ploce Gate]]></description>
+    <styleUrl>#style22</styleUrl>
+    <Point>
+      <coordinates>18.110800,42.640999,0.000000</coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name></name>
+    <description><![CDATA[Orthodox Church and Icon Museum]]></description>
+    <styleUrl>#style25</styleUrl>
+    <Point>
+      <coordinates>18.109037,42.640785,0.000000</coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name></name>
+    <description><![CDATA[Jewish Synagogue]]></description>
+    <styleUrl>#style4</styleUrl>
+    <Point>
+      <coordinates>18.110023,42.641449,0.000000</coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name></name>
+    <description><![CDATA[Lokrum]]></description>
+    <styleUrl>#style14</styleUrl>
+    <Point>
+      <coordinates>18.119373,42.633011,0.000000</coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name></name>
+    <description><![CDATA[Lapad Beach]]></description>
+    <styleUrl>#style11</styleUrl>
+    <Point>
+      <coordinates>18.081635,42.657276,0.000000</coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name></name>
+    <description><![CDATA[ATM<br>Brsalje 9]]></description>
+    <styleUrl>atm.png</styleUrl>
+    <Point>
+      <coordinates>18.104975,42.642159,0.000000</coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name></name>
+    <description><![CDATA[ATM<br>Placa 12]]></description>
+    <styleUrl>atm.png</styleUrl>
+    <Point>
+      <coordinates>18.109665,42.641125,0.000000</coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name></name>
+    <description><![CDATA[ATM<br>Josipa Kosora 4]]></description>
+    <styleUrl>atm.png</styleUrl>
+    <Point>
+      <coordinates>18.082981,42.648521,0.000000</coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name></name>
+    <description><![CDATA[ATM<br>Massarykov put 9 (hotel Adriatic)
+]]></description>
+    <styleUrl>atm.png</styleUrl>
+    <Point>
+      <coordinates>18.068884,42.652946,0.000000</coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name></name>
+    <description><![CDATA[ATM<br>Dr. Roka Mišetića 2 (hospital)]]></description>
+    <styleUrl>atm.png</styleUrl>
+    <Point>
+      <coordinates>18.075472,42.648300,0.000000</coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name></name>
+    <description><![CDATA[ATM<br>Vukovarska 22]]></description>
+    <styleUrl>atm.png</styleUrl>
+    <Point>
+      <coordinates>18.091650,42.651478,0.000000</coordinates>
+    </Point>
+  </Placemark>
+</Document>
+</kml>
