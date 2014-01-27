@@ -1,0 +1,90 @@
+<html>
+<head>
+<title>Dubrovnik</title>
+<style>
+	img[galleryimg=no] {
+		min-width: 24px !important;
+		min-height: 24px !important; 
+	}
+	.mqabasicwnd {
+   		font:14px arial, helvetica, sans-serif;
+   		width:300px !important;
+		height:200px !important;
+ 	}
+</style>
+<script src="http://open.mapquestapi.com/sdk/js/v7.0.s/mqa.toolkit.js"></script>
+<script type="text/javascript">
+MQA.EventUtil.observe(window, 'load', function () {
+var options = {
+elt: document.getElementById('map'), /*ID of element on the page where you want the map added*/
+zoom:15,                                  /*initial zoom level of the map*/
+       latLng:{lat:42.645, lng:18.09},  /*center of map in latitude/longitude */
+mtype: 'map' /*map type (map)*/
+};
+window.map = new MQA.TileMap(options);
+
+MQA.withModule('largezoom','traffictoggle','viewoptions','geolocationcontrol','insetmapcontrol','mousewheel', function() {
+    
+   map.addControl(
+     new MQA.LargeZoom(),
+     new MQA.MapCornerPlacement(MQA.MapCorner.TOP_LEFT, new MQA.Size(5,5))
+   );
+ 
+   map.addControl(new MQA.TrafficToggle());
+ 
+   map.addControl(new MQA.ViewOptions());
+ 
+   map.addControl(
+     new MQA.GeolocationControl(),
+     new MQA.MapCornerPlacement(MQA.MapCorner.TOP_RIGHT, new MQA.Size(10,50))
+   );
+ 
+   /*Inset Map Control options*/
+   var options={
+     size:{width:150, height:125},
+     zoom:3,
+     mapType:'map',
+     minimized:true
+   };
+ 
+   map.addControl(
+     new MQA.InsetMapControl(options),
+     new MQA.MapCornerPlacement(MQA.MapCorner.BOTTOM_RIGHT)
+   );
+ 
+   map.enableMouseWheelZoom();
+ });
+
+
+MQA.withModule('dotcomwindowmanager', 'remotecollection', 'kmldeserializer', function () {
+                var dubrovnik = new MQA.RemoteCollection('Dubrovnik.kml', new MQA.KMLDeserializer());
+                dubrovnik.collectionName = 'dubrovnik';
+                MQA.EventManager.addListener(dubrovnik, 'loaded', function () {
+                    map.setZoomLevel(14);
+                    console.log(dubrovnik.getSize());
+                    var size = dubrovnik.getSize();
+                    for(var i=0; i < size; i++) {
+                        var item = dubrovnik.getAt(i);
+                        var itemIcon = item.getIcon();
+                        itemIcon.width = 32;
+                        itemIcon.height= 32;
+                        item.setIcon(itemIcon);                        
+                    }
+		
+		    map.bestFit();                     
+
+                });           
+                  
+                map.addShapeCollection(dubrovnik);   
+		
+		                              
+            });
+});
+
+</script>
+</head>
+
+<body>
+<div id='map' style='width:750px; height:500px;'></div>
+</body>
+</html> 
