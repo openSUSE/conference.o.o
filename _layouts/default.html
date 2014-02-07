@@ -50,6 +50,18 @@
       <script src="assets/js/html5shiv.js"></script>
       <script src="assets/js/respond.min.js"></script>
     <![endif]-->
+
+
+    <script type="text/javascript">
+        $(function(){
+            $('#headerwrap').on('mousemove', function(e){
+                var dw = $(document).width();
+                var off = (dw/2-e.pageX)/(dw/2);
+                $('#main-title').css('text-shadow', Math.floor(off*20)+'px -'+Math.floor(7-7*Math.abs(off))+'px '+Math.floor(18*Math.abs(off)+3)+'px black');
+            });
+            
+        });
+    </script>
   </head>
 
   <body data-spy="scroll" data-offset="0" data-target="#theMenu">
