@@ -103,7 +103,6 @@ a:after {
 	font-family: "chunk";
 	margin-top: 100px;
 	color: #669900;
-	text-shadow: 0.01em 0.01em 0 #4A4F6A, 0.02em 0.02em 0 #4A4F6A, 0.03em 0.03em 0 #4A4F6A, 0.04em 0.04em 0 #4A4F6A, 0.05em 0.05em 0 #4A4F6A, 0.06em 0.06em 0 #4A4F6A, 0.07em 0.07em 0 #4A4F6A, 0.08em 0.08em 0 #4A4F6A, 0.09em 0.09em 0 #4A4F6A, 0.1em 0.1em 0 #4A4F6A;
 	text-shadow: 4px 4px 4px black;
 }
 
@@ -161,10 +160,6 @@ a:after {
 	color: #2f2f2f;
 }
 
-#reg {
-    background:white;
-    text-align:center;
-}
 
 /* Grey Wrap */
 
@@ -469,69 +464,6 @@ a:after {
 	padding-left: 10px;
 }
 
-/* HEADER REGISTRATION BUTTON */
-.css3button {
-    display:inline-block;
-    width:auto;
-	font-family: Arial, Helvetica, sans-serif;
-	font-size: 28px;
-    font-weight:bold;
-    margin-top:20px;
-	color: #ffffff;
-	padding: 10px 20px;
-	background: -moz-linear-gradient(
-		top,
-		#006b15 0%,
-		#5ba308);
-	background: -webkit-gradient(
-		linear, left top, left bottom,
-		from(#006b15),
-		to(#5ba308));
-	-moz-border-radius: 8px;
-	-webkit-border-radius: 8px;
-	border-radius: 8px;
-	border: 2px solid #334735;
-	-moz-box-shadow:
-		0px 1px 3px rgba(000,000,000,0.5),
-		inset 0px 0px 1px rgba(255,255,255,0.7);
-	-webkit-box-shadow:
-		0px 1px 3px rgba(000,000,000,0.5),
-		inset 0px 0px 1px rgba(255,255,255,0.7);
-	box-shadow:
-		0px 1px 3px rgba(000,000,000,0.5),
-		inset 0px 0px 1px rgba(255,255,255,0.7);
-	text-shadow:
-		0px -1px 0px rgba(000,000,000,0.4),
-		0px 1px 0px rgba(204,59,204,0.3);
-}
-.css3button:hover {
-	color: #ffffff;
-	padding: 10px 20px;
-	background: -moz-linear-gradient(
-		top,
-		#e6eced 0%,
-		#5ba308);
-	background: -webkit-gradient(
-		linear, left top, left bottom,
-		from(#e6eced),
-		to(#5ba308));
-	-moz-border-radius: 8px;
-	-webkit-border-radius: 8px;
-	border-radius: 8px;
-	border: 2px solid #334735;
-	-moz-box-shadow:
-		0px 1px 3px rgba(000,000,000,0.5),
-		inset 0px 0px 1px rgba(255,255,255,0.7);
-	-webkit-box-shadow:
-		0px 1px 3px rgba(000,000,000,0.5),
-		inset 0px 0px 1px rgba(255,255,255,0.7);
-	box-shadow:
-		0px 1px 3px rgba(000,000,000,0.5),
-		inset 0px 0px 1px rgba(255,255,255,0.7);
-	text-shadow:
-		0px -1px 0px rgba(000,000,000,0.4),
-		0px 1px 0px rgba(204,59,204,0.3);
-}
 
 /* TRACKS IN PROGRAM SECTION */
 #dg .col-md-6 p {
@@ -549,3 +481,6 @@ a:after {
 #accommodation .col-md-8 {text-align:left}
 #accommodation .col-md-8 h2 {text-align:center}
 #accommodation .col-md-6 p {text-align:center}
+
+#oSC14map { height: 500px; }
+.leaflet-shadow-pane {display: none;}

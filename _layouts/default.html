@@ -70,12 +70,13 @@
 	<nav class="menu" id="theMenu">
 		<div class="menu-wrap">
 			<h1 class="logo"><a href="index.html#home">oSC14</a></h1>
-			<a href="#register" class="smoothScroll">Register</a>
-			<a href="#accommodation" class="smoothScroll">Accommodation</a>
 			<a href="#about" class="smoothScroll">About</a>
+      <a href="#cfp" class="smoothScroll">Call for Papers</a>
 			<a href="#program" class="smoothScroll">Program</a>
 			<a href="#location" class="smoothScroll">Location</a>
+      <a href="#register" class="smoothScroll">Register</a>
 			<a href="#tickets" class="smoothScroll">Tickets</a>
+                        <a href="#accommodation" class="smoothScroll">Accommodation</a>			
 			<a href="#sponsors" class="smoothScroll">Sponsors</a>
 			
 			<a href="#"><i class="fa fa-facebook"></i></a>
@@ -135,7 +136,6 @@
       jQuery("#main-title").fitText(0.5);
     </script>
 
-    <!-- 
     <script src="assets/js/tabletop.js"></script>
     
     <script>
@@ -169,23 +169,16 @@
     <script src="/assets/js/leaflet.js"></script>
     
     <script>
-        var map = L.map('oSC14map').setView([40.632714,22.952499], 14);
-    
+        var map = L.map('oSC14map', {
+          center: [42.650944, 18.091606],
+          zoom: 14
+        });
+
         L.tileLayer('http://{s}.tile.osm.org/{z}/{x}/{y}.png', {
-          maxZoom: 18,
-      attribution: 'Map data & Imagery &copy; <a href="http://openstreetmap.org">OpenStreetMap</a> contributors, <a href="http://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, Markers &copy; <a href="http://www.webiconset.com/map-    icons/">WebIconSet</a>.'
+          maxZoom: 18,          
+      attribution: 'Map data & Imagery &copy; <a href="http://openstreetmap.org">OpenStreetMap</a> contributors, <a href="http://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, Markers &copy; <a href="http://www.webiconset.com/map-icons/">WebIconSet</a>.'
         }).addTo(map);
     
-        var popup = L.popup();
-    
-          function onMapClick(e) {
-            popup
-              .setLatLng(e.latlng)
-              .setContent(e.latlng.toString())
-              .openOn(map);
-          }
-    
-          map.on('click', onMapClick);
     </script>
     
     <script>
@@ -207,8 +200,8 @@
         Venue = new oSCIcon({iconUrl: '/assets/img/markers/venue.png'}),
         Sight = new oSCIcon({iconUrl: '/assets/img/markers/sight.png'});
         Airport = new oSCIcon({iconUrl: '/assets/img/markers/airport.png'});
-        Bus = new oSCIcon({iconUrl: '/assets/img/markers/bus.png'});
-        Taxi = new oSCIcon({iconUrl: '/assets/img/markers/taxi.png'});
+        Money = new oSCIcon({iconUrl: '/assets/img/markers/money.png'});
+        Medical = new oSCIcon({iconUrl: '/assets/img/markers/medical.png'});
         Train = new oSCIcon({iconUrl: '/assets/img/markers/train.png'});
         Shopping = new oSCIcon({iconUrl: '/assets/img/markers/shopping.png'});
         Bar = new oSCIcon({iconUrl: '/assets/img/markers/bar.png'});
@@ -252,7 +245,6 @@
       }
     };
     </script>
-    -->
 
 </body>
 </html>
