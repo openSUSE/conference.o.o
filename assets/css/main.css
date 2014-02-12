@@ -465,22 +465,7 @@ a:after {
 }
 
 
-/* TRACKS IN PROGRAM SECTION */
-#dg .col-md-6 p {
-    text-align:left;
-}
 
-/* ACCOMMODATION */
-#accommodation {
-    background: #FFF;
-    text-align:center;
-}
-#accommodation p {
-    text-align:left;
-}
-#accommodation .col-md-8 {text-align:left}
-#accommodation .col-md-8 h2 {text-align:center}
-#accommodation .col-md-6 p {text-align:center}
-
+/* MAP */
 #oSC14map { height: 500px; }
 .leaflet-shadow-pane {display: none;}
