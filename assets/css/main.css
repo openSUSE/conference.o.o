@@ -184,11 +184,16 @@ a:after {
 	background: #2f2f2f;
 	padding-top: 70px;
 	padding-bottom: 70px;
-	text-align: center
+	text-align: center;
+	color: white;
 }
 
 #f h3 {
-	color: white;	
+	color: white;
+}
+
+#f h4 {
+	color: white;
 }
 
 #f i {
