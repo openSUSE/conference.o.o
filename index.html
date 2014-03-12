@@ -2,7 +2,14 @@
 layout: default
 title: openSUSE Conference
 banners:
+ - 120x240
+ - 120x60
+ - 120x600
+ - 120x90
+ - 125x125
+ - 160x600
  - 180x150
+ - 180x90
  - 234x60
  - 240x400
  - 250x250
@@ -405,16 +412,80 @@ banners:
         <div id="dg">
             <div class="container">
                 <div class="row">
-                    <h2>Help us spread the word</h2>
-                    <p class="lead">
-                        please include these awesome banners into your web pages, social networks and emails.
-                    </p>
+                    <div class="col-md-12">
+                        <h2>Help us spread the word</h2>
+                        <p class="lead">
+                            please include our awesome banners into your web pages, social networks and emails.
+                        </p>
+                        <p class="text-center">
+                            <img src="/assets/img/banners/728x90.jpg" class="img-responsive center-block">
+                            <br />
+                            <a id="bannertoggle" class="btn btn-default pull-right">
+                              More banner, badges, posters, logos
+                            </a>
+                        </p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div id="banner" style="display: none;">
+                    <div class="col-xs-6 col-md-3">
+                        <div class="thumbnail">
+                            <img src="/assets/img/banners/thumb/oSC14_logo.png" alt="Poster">
+                            <div class="caption">
+                                <h3>Logo</h3>
+                                <p>
+                                    <a href="/assets/img/banners/oSC14_logo.png" class="btn btn-default">
+                                        Download
+                                    </a>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xs-6 col-md-3">
+                        <div class="thumbnail">
+                            <img src="/assets/img/banners/thumb/poster.jpg" alt="Poster">
+                            <div class="caption">
+                                <h3>Poster</h3>
+                                <p>
+                                    <a href="/assets/img/banners/Poster.pdf" class="btn btn-default">
+                                        Download
+                                    </a>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xs-6 col-md-3">
+                        <div class="thumbnail">
+                            <img src="/assets/img/banners/thumb/tux.png" alt="Poster">
+                            <div class="caption">
+                                <h3>Folding Tux</h3>
+                                <p>
+                                    <a href="/assets/img/banners/FoldingTux_oSC14.pdf" class="btn btn-default">
+                                        Download
+                                    </a>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xs-6 col-md-3">
+                        <div class="thumbnail">
+                            <img src="/assets/img/banners/thumb/cube.png" alt="Poster">
+                            <div class="caption">
+                                <h3>Folding Cube</h3>
+                                <p>
+                                    <a href="/assets/img/banners/PromoCube_oSC14.pdf" class="btn btn-default">
+                                        Download
+                                    </a>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
                     {% for banner in page.banners %}
                         <div class="col-xs-6 col-md-3">
                             <div class="thumbnail">
                                 <img src="/assets/img/banners/thumb/{{ banner }}.jpg" alt="{{ banner }}">
                                 <div class="caption">
-                                    <h3>{{ banner }}</h3>
+                                    <h3>Banner {{ banner }}</h3>
                                     <p>
                                         <a href="/assets/img/banners/{{ banner }}.jpg" class="btn btn-default">
                                             Download
@@ -444,6 +515,7 @@ banners:
                             </div>
                         </div>
                     {% endfor %}
+                    </div>
                 </div>
             </div>
             </div>
